@@ -1,0 +1,11 @@
+﻿<Window x:Class="WpfApplication2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Grid Height="209" HorizontalAlignment="Left" Margin="12,90,0,0" Name="grid1" VerticalAlignment="Top" Width="479">
+            <RichTextBox Height="195" HorizontalAlignment="Left" Margin="8,8,0,0" Name="richTextBox1" VerticalAlignment="Top" Width="465" />
+        </Grid>
+        <Menu Height="23" HorizontalAlignment="Left" Name="menu1" VerticalAlignment="Top" Width="200" />
+    </Grid>
+</Window>
