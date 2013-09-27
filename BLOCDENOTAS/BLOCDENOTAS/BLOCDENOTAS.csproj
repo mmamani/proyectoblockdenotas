@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{208D1FF7-F7FE-411B-B343-6292B68FCBDF}</ProjectGuid>
+    <ProjectGuid>{EDF2A400-2C12-42C1-A459-EF966D1E6173}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>WpfApplication2</RootNamespace>
-    <AssemblyName>WpfApplication2</AssemblyName>
+    <RootNamespace>BLOCDENOTAS</RootNamespace>
+    <AssemblyName>BLOCDENOTAS</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>Client</TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
