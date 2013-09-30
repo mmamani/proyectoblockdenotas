@@ -13,6 +13,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Windows.Resources;
 using System.IO;
+using Microsoft.Win32;
 
 
 namespace BLOCDENOTAS
@@ -27,13 +28,12 @@ namespace BLOCDENOTAS
             InitializeComponent();
             
         }
-        
+        #region open
         private void openbloc(object sender, RoutedEventArgs e)
         {
             string r;
-            Microsoft.Win32.OpenFileDialog dlg = new Microsoft.Win32.OpenFileDialog();
+            OpenFileDialog dlg = new OpenFileDialog();
             dlg.DefaultExt = ".txt";
-
             Nullable<bool> result = dlg.ShowDialog();
             if (result == true)
             {
@@ -43,11 +43,35 @@ namespace BLOCDENOTAS
                 //string filename = dlg.FileName;
                 //textBlock1.Text = filename;
             }
-            
             //StreamReader mytext = new StreamReader(dlg.FileName);
-            
-            
+        }
+        #endregion
+        #region nuevo
+        private void newnote(object sender, RoutedEventArgs e)
+        {
+            textBox1.Clear();
             
         }
+        #endregion
+        #region guardarcomo
+        private void guardarcomo(object sender, RoutedEventArgs e)
+        {
+            SaveFileDialog my = new SaveFileDialog();
+            my.Filter = "text file *.txt";
+            my.FileName = "untitled";
+            my.Title = "save as";
+            if (my.ShowDialog()== DialogResult.Equals("ok"))
+            {
+                F
+            }
+
+        }
+        #endregion
+        #region salir
+        private void exit(object sender, RoutedEventArgs e)
+        {
+            Environment.Exit(0);
+        }
+        #endregion
     }
 }

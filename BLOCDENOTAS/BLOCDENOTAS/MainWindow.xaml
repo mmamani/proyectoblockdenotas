@@ -1,21 +1,19 @@
 ﻿<Window x:Class="BLOCDENOTAS.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="MainWindow" mc:Ignorable="d" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" d:DesignHeight="233" d:DesignWidth="508" SizeToContent="WidthAndHeight">
-    <Grid Height="268" Width="586">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="21*" />
-            <RowDefinition Height="290*" />
-        </Grid.RowDefinitions>
-        <Menu Height="20" Name="menu1" VerticalAlignment="Top" AllowDrop="False" UseLayoutRounding="False" Margin="0,0.267,1,0" Grid.RowSpan="2" >
+        ResizeMode="CanResizeWithGrip"
+        Title="MainWindow" mc:Ignorable="d" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" d:DesignHeight="300" d:DesignWidth="300" SizeToContent="WidthAndHeight">
+    <Grid Height="268" Width="586" >
+        <Menu Name="menu1" VerticalAlignment="Stretch"  AllowDrop="False" UseLayoutRounding="False" Margin="0,0.267,0,0">
             <MenuItem Header="ARCHIVO" IsCheckable="False" HeaderStringFormat="archivo" Name="ABRIR" >
-                <MenuItem Header="NUEVO" Name="nuevo" />
+                <MenuItem Header="NUEVO" Name="nuevo" Click="newnote"/>
                 <MenuItem Header="ABRIR" Name="abrirr" Click="openbloc" />
                 
                 <MenuItem Header="GUARDAR" />
-                <MenuItem Header="GUARDAR COMO" />
+                <MenuItem Header="GUARDAR COMO" Name="guardar" Click="guardarcomo"/>
                 <MenuItem Header="IMPRIMIR" />
-                <MenuItem Header="SALIR" />
+                
+                <MenuItem Header="SALIR" Click="exit"/>
             </MenuItem>
             <MenuItem Header="EDICION">
                 
@@ -40,6 +38,6 @@
                 <MenuItem Header="AYUDA DE BLOC DE NOTAS" />
             </MenuItem>
         </Menu>
-        <TextBox Grid.Row="1" Height="248" HorizontalAlignment="Left" Name="textBox1" VerticalAlignment="Top" Width="585" />
+        <TextBox Height="248" HorizontalAlignment="Left" Name="textBox1" VerticalAlignment="Top" Width="586" Margin="0,20,0,0" />
     </Grid>
 </Window>
